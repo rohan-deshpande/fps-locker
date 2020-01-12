@@ -1,0 +1,38 @@
+{
+  "name": "fps-locker",
+  "version": "0.0.1",
+  "description": "Smartly manages time based updates to ensure a solid FPS is always maintained where possible",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.js",
+    "build": "parcel build ./src/index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-deshpande/fps-locker.git"
+  },
+  "keywords": [
+    "animation"
+  ],
+  "author": {
+    "name": "Michael Schlachter",
+    "email": "manthrax@gmail.com",
+    "url": "http://www.vectorslave.com"
+  },
+  "contributors": [
+    {
+      "name": "Rohan Deshpande",
+      "email": "rohan@creativelifeform.com",
+      "url": "https://github.com/rohan-deshpande"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohan-deshpande/fps-locker/issues"
+  },
+  "homepage": "https://github.com/rohan-deshpande/fps-locker#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
