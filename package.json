@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel ./src/index.js",
     "build": "prettier --write './src/index.js' && parcel build ./src/index.js && parcel build ./src/index.js -o index.dev.js --no-minify",
-    "test": "test"
+    "test": "test",
+    "toc": "markdown-toc ./README.md -i"
   },
   "repository": {
     "type": "git",

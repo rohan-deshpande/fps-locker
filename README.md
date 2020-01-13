@@ -1,5 +1,16 @@
 # FPS Locker
 
+<!-- toc -->
+
+- [Why?](#why)
+- [Usage](#usage)
+  * [Installation](#installation)
+  * [Module](#module)
+  * [Script Tag](#script-tag)
+- [Usage with Three.js](#usage-with-threejs)
+
+<!-- tocstop -->
+
 ## Why?
 
 Maintaining a steady frame rate in on a wide variety of devices and screens that refresh at different rates is challenging. The browser's own `requestAnimationFrame` API does not really provide a way to do this natively, and many popular solutions posted on StackOverflow and other forums are either bug prone or do not accommodate for edge cases such as a user navigating away from a window/tab that is running `requestAnimationFrame` and then coming back later.
