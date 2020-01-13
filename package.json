@@ -1,7 +1,7 @@
 {
   "name": "fps-locker",
   "version": "0.0.1",
-  "description": "Smartly manages time based updates to ensure a solid FPS is always maintained where possible",
+  "description": "Manages time based updates to ensure a solid FPS is always maintained where possible",
   "main": "dist/index.js",
   "scripts": {
     "dev": "parcel ./src/index.js",

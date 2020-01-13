@@ -16,7 +16,7 @@ npm i -S fps-locker
 
 ### Module
 
-```
+```javascript
 import FpsLocker from 'fps-locker';
 
 const updater = new FpsLocker(() => {
@@ -27,7 +27,7 @@ const render = () => {
   const animate = now => {
     requestAnimationFrame(animate);
     updater.update();
-  }
+  };
 };
 
 render();
@@ -37,13 +37,13 @@ render();
 
 In your HTML `<head>`:
 
-```
-<script src='/path/to/fps-locker.js'></script>
+```html
+<script src="/path/to/fps-locker.js"></script>
 ```
 
 In your app:
 
-```
+```javascript
 const updater = new window.FpsLocker(() => {
   allMyAnimations();
 });
@@ -52,7 +52,7 @@ const render = () => {
   const animate = now => {
     requestAnimationFrame(animate);
     updater.update();
-  }
+  };
 };
 
 render();
@@ -62,7 +62,7 @@ render();
 
 It's advised that you call your Three app's `renderer.render` method **after** your updates have performed and not within the supplied update function itself.
 
-```
+```javascript
 import FpsLocker from 'fps-locker';
 
 const updater = new FpsLocker(() => {
@@ -74,7 +74,7 @@ const render = () => {
     requestAnimationFrame(animate);
     updater.update();
     myThreeWebGlRenderer.render(myScene, myCamera);
-  }
+  };
 };
 
 render();
