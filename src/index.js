@@ -1,8 +1,8 @@
 import {
   DEFAULT_FPS,
   DEFAULT_MAX_UPDATES,
-  DEFAULT_ON_UPDATE
-} from "./constants";
+  DEFAULT_ON_UPDATE,
+} from './constants';
 
 export default class FpsLocker {
   constructor(

@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "parcel ./src/index.js",
-    "build": "parcel build ./src/index.js",
+    "build": "prettier --write './src/index.js' && parcel build ./src/index.js && parcel build ./src/index.js -o index.dev.js --no-minify",
     "test": "test"
   },
   "repository": {
@@ -13,7 +13,9 @@
     "url": "git+https://github.com/rohan-deshpande/fps-locker.git"
   },
   "keywords": [
-    "animation"
+    "animation",
+    "fps",
+    "requestAnimationFrame"
   ],
   "author": {
     "name": "Michael Schlachter",
@@ -33,6 +35,7 @@
   },
   "homepage": "https://github.com/rohan-deshpande/fps-locker#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1"
   }
 }
