@@ -30,7 +30,7 @@ npm i -S fps-locker
 ```javascript
 import FpsLocker from 'fps-locker';
 
-const updater = new FpsLocker(() => {
+const updater = new FPSLocker(() => {
   allMyAnimations();
 });
 
@@ -55,7 +55,7 @@ In your HTML `<head>`:
 In your app:
 
 ```javascript
-const updater = new window.FpsLocker(() => {
+const updater = new window.FPSLocker(() => {
   allMyAnimations();
 });
 
@@ -76,7 +76,7 @@ It's advised that you call your Three app's `renderer.render` method **after** y
 ```javascript
 import FpsLocker from 'fps-locker';
 
-const updater = new FpsLocker(() => {
+const updater = new FPSLocker(() => {
   allMyAnimations();
 });
 
