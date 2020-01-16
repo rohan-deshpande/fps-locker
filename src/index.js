@@ -22,6 +22,7 @@ export default class FPSLocker {
       if (numUpdates > this.maxUpdates) numUpdates = this.maxUpdates;
       this.lastTime = now;
     }
+    if(this.disabled) numUpdates = 1;
     while (numUpdates-- > 0) this.onUpdate();
   }
   set fps( fps ){
