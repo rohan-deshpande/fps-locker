@@ -1,12 +1,5 @@
 
-export default class FpsLocker {
-  set fps( fps ){
-  	this._fps = fps;
-  	this.timeSlice = 1000 / fps
-  }
-  reset(){
-  	this.cumulativeTime = this.lastTime = 0
-  }
+export default class FPSLocker {
   constructor(
     onUpdate = () => console && console.warn("You have not provided an onUpdate method"),
     fps = 60,
@@ -30,5 +23,12 @@ export default class FpsLocker {
       this.lastTime = now;
     }
     while (numUpdates-- > 0) this.onUpdate();
+  }
+  set fps( fps ){
+  	this._fps = fps;
+  	this.timeSlice = 1000 / fps
+  }
+  reset(){
+  	this.cumulativeTime = this.lastTime = 0
   }
 }
